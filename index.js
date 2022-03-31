@@ -11,7 +11,8 @@ function play() {
     var cpu = game[index];
     alert("You chose " + chosen + " & The Internet chose: " + cpu);
 
-    if (chosen === null) {
+    if (chosen !== "P" && chosen !== "R" && chosen !== "S") {
+        alert("Please select P, S, or R")
         return play();     
     }   
     if (chosen === cpu) {
